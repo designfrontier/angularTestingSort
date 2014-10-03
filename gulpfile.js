@@ -3,14 +3,14 @@ var gulp = require('gulp')
     , karma = require('gulp-karma');
 
 
-gulp.task('testNode', function () {
-	gulp.src([
-			'routes/*_test.js'
-		], {read: false})
-		.pipe(mocha({
-			reporter: 'spec'
-		}));
-});
+// gulp.task('testNode', function () {
+// 	gulp.src([
+// 			'routes/*_test.js'
+// 		], {read: false})
+// 		.pipe(mocha({
+// 			reporter: 'spec'
+// 		}));
+// });
 
 gulp.task('testAngular', function () {
     gulp.src('./bogus.js')
@@ -21,7 +21,7 @@ gulp.task('testAngular', function () {
         });
 });
 
-gulp.task('test',['testNode', 'testAngular'], function () {
+gulp.task('test',['testAngular'], function () {
 
 });
 

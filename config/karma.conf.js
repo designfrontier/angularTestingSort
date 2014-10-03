@@ -8,15 +8,15 @@ module.exports = function (config) {
         frameworks: ['mocha', 'chai'],
 
         files: [
-            'public/javascripts/lib/angular/angular.min.js',
-            'public/javascripts/lib/angular-mocks/angular-mocks.js',
-            'public/javascripts/lib/angular-route/angular-route.min.js',
-            'public/javascripts/lib/angular-resource/angular-resource.min.js',
-            'public/javascripts/lib/sjcl/sjcl.js',
-            'public/javascripts/lib/localforage/dist/localforage.min.js',
-            'public/javascripts/app.js',
+            '../public/javascripts/lib/angular/angular.min.js',
+            '../public/javascripts/lib/angular-mocks/angular-mocks.js',
+            '../public/javascripts/lib/angular-route/angular-route.min.js',
+            '../public/javascripts/lib/angular-resource/angular-resource.min.js',
+            '../public/javascripts/lib/sjcl/sjcl.js',
+            '../public/javascripts/lib/localforage/dist/localforage.min.js',
+            '../public/javascripts/app.js',
 
-            'public/javascripts/component/**/*.js'
+            '../public/javascripts/component/**/*.js'
         ],
 
         reporters: ['spec'],
