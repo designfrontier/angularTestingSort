@@ -93,5 +93,6 @@ Icon
 ###OUR Ignores
 node_modules/
 build/
+public/javascripts/lib/
 .sass-cache
 html-angular-validate-report.json
