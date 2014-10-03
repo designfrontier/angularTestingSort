@@ -15,7 +15,7 @@ gulp.task('testNode', function () {
 gulp.task('testAngular', function () {
     gulp.src('./bogus.js')
         .pipe(karma({
-            configFile: 'karma.conf.js'
+            configFile: 'config/karma.conf.js'
         })).on('error', function (err) {
             throw err;
         });
