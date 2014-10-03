@@ -33,8 +33,7 @@ module.exports = function(grunt){
   var configs = require('load-grunt-configs')(grunt, options);
     grunt.initConfig(configs);
 
-  grunt.registerTask('lint', ['jshint', 'htmlangular']);
-  grunt.registerTask('test', ['karma:continuous']);
+  grunt.registerTask('test', ['jshint','karma:continuous']);
 
   // 'dev' task calls 'watch' which indirectly calls 'karma:unit:run'. This expects to connect to a karma server on port 9100.
   // therefore, be sure to run the karma:unit task in a separate console when running the dev task.

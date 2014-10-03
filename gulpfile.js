@@ -1,6 +1,7 @@
 var gulp = require('gulp')
 	, mocha = require('gulp-mocha')
-    , karma = require('gulp-karma');
+  , karma = require('gulp-karma')
+  , jshint = require('gulp-jshint');
 
 
 // gulp.task('testNode', function () {
@@ -21,7 +22,23 @@ gulp.task('testAngular', function () {
         });
 });
 
-gulp.task('test',['testAngular'], function () {
+gulp.task('lint', function() {
+    gulp.src([
+              '*.js'
+              , 'components/**/*.js'
+              , 'subsections/**/*.js'
+              , '!Gruntfile.js'
+              , '!**/*_test.js'
+              , '!lib/**'
+              , '!node_modules/**'
+              , '!config/**'
+            ])
+        .pipe(jshint('.jshintrc'))
+        .pipe(jshint.reporter('jshint-stylish'))
+        .pipe(jshint.reporter('fail'));
+});
+
+gulp.task('test',['lint','testAngular'], function () {
 
 });
 
