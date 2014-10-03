@@ -1,0 +1,30 @@
+{
+  "name": "angularTesting",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "gulp test"
+  },
+  "dependencies": {
+    "express": "~4.0.0",
+    "static-favicon": "~1.0.0",
+    "morgan": "~1.0.0",
+    "cookie-parser": "~1.0.1",
+    "body-parser": "~1.0.0",
+    "debug": "~0.7.4",
+    "ejs": "~0.8.5"
+  },
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "gulp": "^3.8.7",
+    "gulp-karma": "0.0.4",
+    "gulp-mocha": "^1.0.0",
+    "karma": "^0.12.23",
+    "karma-chai": "^0.1.0",
+    "karma-mocha": "^0.1.9",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "karma-spec-reporter": "0.0.13",
+    "mocha": "^1.21.4",
+    "phantomjs": "^1.9.7-15"
+  }
+}
