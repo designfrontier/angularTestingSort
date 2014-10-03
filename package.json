@@ -16,6 +16,9 @@
   },
   "devDependencies": {
     "chai": "^1.9.1",
+    "grunt": "^0.4.5",
+    "grunt-karma": "^0.9.0",
+    "grunt-mocha": "^0.4.11",
     "gulp": "^3.8.7",
     "gulp-karma": "0.0.4",
     "gulp-mocha": "^1.0.0",
